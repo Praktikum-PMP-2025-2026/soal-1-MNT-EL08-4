@@ -69,7 +69,7 @@ void inorderTraversal(Node* root)
     }
 
     inorderTraversal(root->left);
-    printf("%d ", root->data);
+    printf("%d", root->data);
     inorderTraversal(root->right);
 }
 
@@ -79,7 +79,7 @@ void preOrder(struct Node* node) {
         return;
 
     // Visit the current node first
-    printf("%d ", node->data);
+    printf("%d", node->data);
 
     // Traverse the left subtree
     preOrder(node->left);
@@ -100,7 +100,7 @@ void postOrder(struct Node *node)
     postOrder(node->right);
 
     // now we visit node
-    printf("%d ", node->data);
+    printf("%d", node->data);
 }
 
 int main()
