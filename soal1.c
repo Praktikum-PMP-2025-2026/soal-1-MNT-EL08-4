@@ -103,8 +103,6 @@ void postOrder(struct Node *node)
     printf("%d ", node->data);
 }
 
-
-
 int main()
 {
     Node* root = NULL;
@@ -123,16 +121,19 @@ int main()
 
     for (int  i = 0; i < N; i++){
         scanf("%d", &arr[i]);
-        insert(&root, &arr[i]);
+        insert(&root, arr[i]);
     }
 
     //Preorder traversal
+    printf("PRE ");
     preOrder(root);
     printf("\n");
     // Inorder traversal
+    printf("IN ");
     inorderTraversal(root);
     printf("\n");
     // Postorder ttraversal
+    printf("POST ");
     postOrder(root);
 
     return 0;
